@@ -1,23 +1,24 @@
 import React, { Component } from "react";
 import { AiTwotoneDislike, AiTwotoneLike } from "react-icons/ai";
+import "../App.css";
 
 export default class ClassComponentDemo extends Component {
-    constructor(props) {
-      super(props);
-      this.state = { likes: 0, dislikes: 0 };
-    }
-    
-    incrementCount = () => {
-      this.setState(
-        { likes: this.state.likes + 1 }
-      );
-    };
+  constructor(props) {
+    super(props);
+    this.state = { likes: 0, dislikes: 0 };
+  }
+  
+  incrementCount = () => {
+    this.setState(
+      { likes: this.state.likes + 1 }
+    );
+  };
 
-    decrementCount = () => {
-      this.setState(
-        { dislikes: this.state.dislikes - 1 }
-      )
-    }
+  decrementCount = () => {
+    this.setState(
+      { dislikes: this.state.dislikes - 1 }
+    )
+  }
 
   render() {
     return (

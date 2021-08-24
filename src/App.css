@@ -37,6 +37,15 @@ dt {
   font-weight: bold;
 }
 
-button{
+button, input{
   padding: 5px;
+  margin: 2.5px;
+}
+
+input {
+  background-color: #282c34;
+}
+
+form {
+  margin: 10px;
 }
